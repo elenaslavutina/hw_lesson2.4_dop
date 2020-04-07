@@ -10,7 +10,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class BonusServiceTest {
     @ParameterizedTest
     @CsvFileSource(resources = "/data.csv")
-
     void shouldCalculate(String testname, long amount, boolean registered, long expected) {
         BonusService service = new BonusService();
 
